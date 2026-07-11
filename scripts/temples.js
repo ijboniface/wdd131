@@ -1,9 +1,11 @@
 const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector(".navigation");
+const navigation = document.querySelector("nav");
 
 menuButton.addEventListener("click", () => {
+
     navigation.classList.toggle("open");
     menuButton.classList.toggle("open");
+
 });
 
 document.querySelector("#currentyear").textContent =

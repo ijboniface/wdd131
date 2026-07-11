@@ -5,19 +5,21 @@
     }
 
     header {
-        display: grid;
-        grid-template-columns: 1fr auto;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
 
-    .navigation {
+    nav {
         position: static;
         flex-direction: row;
         width: auto;
+        background: none;
     }
 
-    .navigation a {
+    nav a {
         display: block;
+        padding: .75rem 1rem;
     }
 
     .gallery {
