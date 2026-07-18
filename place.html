@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nigeria | WDD 131</title>
+
+    <meta name="description"
+        content="A responsive webpage that highlights Nigeria with essential country information.">
+    
+    <meta name="author" content="Ikechukwu Jonathan Boniface">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Nigeria</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+            <picture>
+
+                <source media="(min-width: 768px)" srcset="images/nigeria-large.webp">
+
+                <img src="images/nigeria-small.webp" alt="Beautiful landscape of Nigeria">
+
+            </picture>
+
+            <section class="card data-card">
+
+                <div class="card-title">
+                    <h2>Data</h2>
+                </div>
+
+                <div class="card-content">
+
+                    <p><strong>Area:</strong> 923,768 km²</p>
+
+                    <p><strong>Population:</strong> 223,804,632</p>
+
+                    <p><strong>Capital:</strong> Abuja</p>
+
+                    <p><strong>Languages:</strong> English (Official)</p>
+
+                    <p><strong>Currency:</strong> Nigerian Naira (₦)</p>
+
+                    <p><strong>Time Zone:</strong> UTC +1</p>
+
+                    <p><strong>Calling Code:</strong> +234</p>
+
+                    <p><strong>Internet TLD:</strong> .ng</p>
+
+                </div>
+
+            </section>
+
+            <section class="card weather-card">
+
+                <div class="card-title weather-title">
+
+                    <h2>Weather</h2>
+
+                    <img src="images/weather.svg" alt="Weather Icon" class="weather-icon">
+
+                </div>
+
+                <div class="card-content">
+
+                    <p>
+                        <strong>Temperature:</strong>
+                        <span id="temp">30</span> °C
+                    </p>
+
+                    <p>
+                        <strong>Conditions:</strong>
+                        Sunny
+                    </p>
+
+                    <p>
+                        <strong>Wind:</strong>
+                        <span id="wind">10</span> km/h
+                    </p>
+
+                    <p>
+                        <strong>Wind Chill:</strong>
+                        <span id="windChill"></span>
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;<span id="year"></span>
+
+            🌸 Ikechukwu Jonathan Boniface 🌸
+            Nigeria
+        </p>
+
+        <p>
+            Last Modification:
+            <span id="lastModified"></span>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
