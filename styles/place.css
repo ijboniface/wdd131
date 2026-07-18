@@ -52,7 +52,6 @@ main {
     height: auto;
 }
 
-/* ---------- Cards ---------- */
 
 .card {
     background: white;
@@ -86,7 +85,6 @@ main {
     font-weight: 700;
 }
 
-/* ---------- Weather ---------- */
 
 .weather-icon {
     display: block;
@@ -103,7 +101,6 @@ main {
     margin-bottom: .5rem;
 }
 
-/* ---------- Footer ---------- */
 
 footer {
     max-width: 390px;
@@ -116,14 +113,11 @@ footer {
     font-size: .9rem;
 }
 
-/* ---------- Desktop Cards Hidden Layout ---------- */
-
 .data-card,
 .weather-card {
     position: static;
 }
 
-/* ---------- Nice spacing ---------- */
 
 .data-card {
     border-top: 4px solid var(--red);
