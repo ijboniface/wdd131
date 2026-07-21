@@ -2,12 +2,7 @@ const temperature = 10;
 const windSpeed = 5;
 
 function calculateWindChill(temp, speed) {
-    return (
-        13.12 +
-        0.6215 * temp -
-        11.37 * Math.pow(speed, 0.16) +
-        0.3965 * temp * Math.pow(speed, 0.16)
-    ).toFixed(1) + " °C";
+    return (13.12 + 0.6215 * temp - 11.37 * speed ** 0.16 + 0.3965 * temp * speed ** 0.16).toFixed(1) + " °C";
 }
 
 const windChill = document.getElementById("windChill");

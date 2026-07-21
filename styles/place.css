@@ -88,7 +88,8 @@ main {
 
 .weather-icon {
     display: block;
-    width: 70px;
+    width: 40px;
+    height: auto;
     margin: .75rem auto;
 }
 
