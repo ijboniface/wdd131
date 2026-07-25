@@ -146,26 +146,40 @@ function displayTemples(templeList) {
 }
 // 5. Display all temples when the page loads
 displayTemples(temples);
+
 // 6. Home Filter
-document.querySelector("#home").addEventListener("click", () => {
+document.querySelector("#home").addEventListener("click", (event) => {
+
+    event.preventDefault();
+
     heading.textContent = "All Temples";
+
     displayTemples(temples);
 });
+
 // 7. Old Filter
-document.querySelector("#old").addEventListener("click", () => {
+document.querySelector("#old").addEventListener("click", (event) => {
+
+    event.preventDefault();
 
     heading.textContent = "Old Temples";
 
     const oldTemples = temples.filter((temple) => {
+
         const year = parseInt(temple.dedicated);
+
         return year < 1900;
+
     });
 
     displayTemples(oldTemples);
 
 });
+
 // 8. New Filter
-document.querySelector("#new").addEventListener("click", () => {
+document.querySelector("#new").addEventListener("click", (event) => {
+
+    event.preventDefault();
 
     heading.textContent = "New Temples";
 
@@ -178,7 +192,9 @@ document.querySelector("#new").addEventListener("click", () => {
 
 });
 // 9. Large Filter
-document.querySelector("#large").addEventListener("click", () => {
+document.querySelector("#large").addEventListener("click", (event) => {
+
+    event.preventDefault();
 
     heading.textContent = "Large Temples";
 
@@ -188,7 +204,9 @@ document.querySelector("#large").addEventListener("click", () => {
 
 });
 // 10. Small Filter
-document.querySelector("#small").addEventListener("click", () => {
+document.querySelector("#small").addEventListener("click", (event) => {
+
+    event.preventDefault();
 
     heading.textContent = "Small Temples";
 
@@ -197,3 +215,5 @@ document.querySelector("#small").addEventListener("click", () => {
     displayTemples(smallTemples);
 
 });
+
+

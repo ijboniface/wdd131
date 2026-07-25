@@ -28,7 +28,7 @@ nav {
     gap: .75rem;
 }
 
-nav button {
+nav a {
     padding: .75rem 1.2rem;
     border: none;
     border-radius: 5px;
@@ -39,7 +39,7 @@ nav button {
     transition: .3s;
 }
 
-nav button:hover {
+nav a:hover {
     background: #ffd700;
 }
 
@@ -106,7 +106,7 @@ footer {
         flex-direction: column;
     }
 
-    nav button {
+    nav a {
         width: 100%;
     }
 
@@ -114,4 +114,10 @@ footer {
         grid-template-columns: 1fr;
     }
 
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
