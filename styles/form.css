@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1.5rem 0.75rem 0;
+    background-color: #f4fff4;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+header {
+    width: min(100%, 338px);
+    margin: 0 auto 0.8rem;
+    padding: 0.8rem 0.5rem;
+    background-color: #35002f;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+header p {
+    display: none;
+}
+
+main {
+    width: min(100%, 338px);
+    margin: 0 auto;
+}
+
+form {
+    margin: 0;
+    padding: 1rem;
+    background-color: #d8d1d8;
+    border-radius: 4px;
+}
+
+form>fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: bold;
+}
+
+.required {
+    color: #b00020;
+    font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    min-height: 38px;
+    padding: 0.55rem;
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
+    color: #111111;
+    font-family: inherit;
+    font-size: 0.9rem;
+}
+
+textarea {
+    min-height: 85px;
+    resize: vertical;
+}
+
+/* Rating */
+
+.rating-field {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.rating-field legend {
+    margin-bottom: 0.35rem;
+}
+
+.features-fieldset {
+    margin-bottom: 2rem;
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.rating-options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.rating-options .star {
+    font-size: 0.95rem;
+    line-height: 1;
+    color: #111111;
+    letter-spacing: -2px;
+    margin-bottom: 0.25rem;
+}
+
+.rating-options input[type="radio"] {
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Useful Features */
+
+form>fieldset>fieldset {
+    border: 1px solid #c9c0b5;
+    border-radius: 4px;
+    padding: 0.7rem;
+}
+
+form>fieldset>fieldset legend {
+    margin-bottom: 0.15rem;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Optional fields */
+
+.form-group label[for="review"]::after,
+.form-group label[for="userName"]::after {
+    content: " (Optional)";
+    color: #000080;
+    font-size: 0.8rem;
+}
+
+/* Submit button */
+
+.submit-button {
+    width: 100%;
+    min-height: 38px;
+    padding: 0.5rem;
+    border: 1px solid #777777;
+    background-color: #eeeeee;
+    color: #111111;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+}
+
+.submit-button:focus {
+    outline: 3px solid #5c9ed6;
+    outline-offset: 2px;
+}
+
+/* Keyboard focus */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #5c9ed6;
+    outline-offset: 1px;
+}
+
+/* Footer */
+
+footer {
+    width: min(100%, 338px);
+    margin: 0.9rem auto 0;
+    padding: 0.8rem 0.5rem;
+    background-color: #35002f;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+#lastModified {
+    font-size: 0.75rem;
+}
+
+@media screen and (min-width: 600px) {
+    footer {
+        width: min(90%, 500px);
+    }
+}
+
+/* Confirmation page */
+
+.confirmation {
+    background-color: #d8d1d8;
+    padding: 1.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.confirmation h2 {
+    margin-top: 0;
+    color: #35002f;
+}
+
+.confirmation strong {
+    font-size: 1.5rem;
+}
+
+.return-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem;
+    background-color: #35002f;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.return-link:focus,
+.return-link:hover {
+    background-color: #50004a;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 600px) {
+    body {
+        padding-top: 2rem;
+    }
+
+    header,
+    main,
+    footer {
+        width: min(90%, 500px);
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+.check-instruction {
+    margin: -0.2rem 0 0.3rem;
+    font-style: italic;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Thank you for submitting your product review.">
+
+    <title>Review Submitted</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You!</h1>
+        <p>Your product review has been submitted.</p>
+    </header>
+
+    <main>
+        <section class="confirmation">
+            <h2>Review Submitted Successfully</h2>
+
+            <p>
+                Thank you for taking the time to share your experience.
+            </p>
+
+            <p>
+                Reviews completed:
+                <strong id="reviewCount">0</strong>
+            </p>
+
+            <a href="form.html" class="return-link">
+                Submit Another Review
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Product Review Form</p>
+        <p>W05 Assignment</p>
+    </footer>
+
+    <script>
+        let reviewCount = Number(localStorage.getItem("reviewCount")) || 0;
+
+        reviewCount += 1;
+
+        localStorage.setItem("reviewCount", reviewCount);
+
+        document.querySelector("#reviewCount").textContent = reviewCount;
+    </script>
+</body>
+
+</html>
