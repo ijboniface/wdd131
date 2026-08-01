@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+
+/* Body */
+
 body {
     margin: 0;
     padding: 1.5rem 0.75rem 0;
@@ -11,12 +14,15 @@ body {
     font-size: 14px;
 }
 
+
+/* Header */
+
 header {
     width: min(100%, 338px);
     margin: 0 auto 0.8rem;
     padding: 0.8rem 0.5rem;
     background-color: #35002f;
-    color: white;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -29,17 +35,27 @@ header p {
     display: none;
 }
 
+
+/* Main */
+
 main {
     width: min(100%, 338px);
     margin: 0 auto;
 }
 
+
+/* Form */
+
 form {
     margin: 0;
     padding: 1rem;
-    background-color: #d8d1d8;
+    background-color: #fffaf2;
+    border: 1px solid #777777;
     border-radius: 4px;
 }
+
+
+/* Fieldsets */
 
 form>fieldset {
     border: none;
@@ -52,9 +68,15 @@ legend {
     padding: 0;
 }
 
+
+/* General form groups */
+
 .form-group {
     margin-bottom: 1.2rem;
 }
+
+
+/* Labels */
 
 label {
     display: block;
@@ -62,10 +84,25 @@ label {
     font-weight: bold;
 }
 
+
+/* Required indicator */
+
 .required {
     color: #b00020;
     font-weight: bold;
 }
+
+
+/* Optional indicator */
+
+.optional {
+    color: #333333;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+
+/* Form controls */
 
 input[type="date"],
 input[type="text"],
@@ -74,7 +111,8 @@ textarea {
     width: 100%;
     min-height: 38px;
     padding: 0.55rem;
-    border: 1px solid #c4c4c4;
+    border: 1px solid #666666;
+    border-radius: 2px;
     background-color: #ffffff;
     color: #111111;
     font-family: inherit;
@@ -86,7 +124,8 @@ textarea {
     resize: vertical;
 }
 
-/* Rating */
+
+/* Overall Rating */
 
 .rating-field {
     border: none;
@@ -94,12 +133,12 @@ textarea {
     margin: 0;
 }
 
-.rating-field legend {
-    margin-bottom: 0.35rem;
+.rating-group {
+    margin-bottom: 2.5rem;
 }
 
-.features-fieldset {
-    margin-bottom: 2rem;
+.rating-field legend {
+    margin-bottom: 0.35rem;
 }
 
 .rating-options {
@@ -123,7 +162,7 @@ textarea {
     line-height: 1;
     color: #111111;
     letter-spacing: -2px;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.35rem;
 }
 
 .rating-options input[type="radio"] {
@@ -133,16 +172,29 @@ textarea {
     cursor: pointer;
 }
 
-/* Useful Features */
 
-form>fieldset>fieldset {
-    border: 1px solid #c9c0b5;
-    border-radius: 4px;
-    padding: 0.7rem;
+/* Date of Installation */
+
+.installation-group {
+    margin-bottom: 1.5rem;
 }
 
-form>fieldset>fieldset legend {
-    margin-bottom: 0.15rem;
+
+/* Useful Features */
+
+.features-fieldset {
+    border: 1px solid #666666;
+    border-radius: 4px;
+    padding: 0.7rem;
+    margin: 0 0 2rem;
+}
+
+.features-fieldset legend {
+    margin-bottom: 0.35rem;
+}
+
+.features-fieldset legend em {
+    font-weight: normal;
 }
 
 .checkbox-group {
@@ -167,22 +219,15 @@ form>fieldset>fieldset legend {
     cursor: pointer;
 }
 
-/* Optional fields */
 
-.form-group label[for="review"]::after,
-.form-group label[for="userName"]::after {
-    content: " (Optional)";
-    color: #000080;
-    font-size: 0.8rem;
-}
-
-/* Submit button */
+/* Submit Button */
 
 .submit-button {
     width: 100%;
     min-height: 38px;
     padding: 0.5rem;
-    border: 1px solid #777777;
+    border: 1px solid #555555;
+    border-radius: 2px;
     background-color: #eeeeee;
     color: #111111;
     font-size: 1.1rem;
@@ -194,19 +239,21 @@ form>fieldset>fieldset legend {
     background-color: #ffffff;
 }
 
+
+/* Keyboard Focus */
+
 .submit-button:focus {
-    outline: 3px solid #5c9ed6;
+    outline: 3px solid #005fcc;
     outline-offset: 2px;
 }
-
-/* Keyboard focus */
 
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 3px solid #5c9ed6;
-    outline-offset: 1px;
+    outline: 3px solid #005fcc;
+    outline-offset: 2px;
 }
+
 
 /* Footer */
 
@@ -229,17 +276,13 @@ footer p {
     font-size: 0.75rem;
 }
 
-@media screen and (min-width: 600px) {
-    footer {
-        width: min(90%, 500px);
-    }
-}
 
-/* Confirmation page */
+/* Confirmation Page */
 
 .confirmation {
-    background-color: #d8d1d8;
+    background-color: #fffaf2;
     padding: 1.5rem;
+    border: 1px solid #777777;
     border-radius: 4px;
     text-align: center;
 }
@@ -268,9 +311,11 @@ footer p {
     background-color: #50004a;
 }
 
+
 /* Desktop */
 
 @media screen and (min-width: 600px) {
+
     body {
         padding-top: 2rem;
     }
@@ -288,9 +333,5 @@ footer p {
     header h1 {
         font-size: 1.6rem;
     }
-}
 
-.check-instruction {
-    margin: -0.2rem 0 0.3rem;
-    font-style: italic;
 }
