@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Nigeria | Contact</title>
+
+    <meta name="description" content="Send us questions or feedback about destinations in Nigeria.">
+
+    <meta name="author" content="I.J. Boniface">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/contact.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            🌍 Explore Nigeria
+
+        </div>
+
+        <button id="menuButton" aria-label="Open Navigation">
+
+            ☰
+
+        </button>
+
+        <nav id="navigation">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="attractions.html">Attractions</a></li>
+
+                <li><a href="contact.html" class="active">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <h1>Contact Us</h1>
+
+            <p>
+
+                Have a question about a destination or want to share your travel experience?
+                Complete the form below.
+
+            </p>
+
+        </section>
+
+        <section class="form-section">
+
+            <form id="contactForm" novalidate>
+
+                <div class="form-group">
+
+                    <label for="fullname">Full Name</label>
+
+                    <input type="text" id="fullname" name="fullname" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="email">Email Address</label>
+
+                    <input type="email" id="email" name="email" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="destination">
+
+                        Destination of Interest
+
+                    </label>
+
+                    <select id="destination" name="destination" required>
+
+                        <option value="">Select One</option>
+
+                        <option>Obudu Mountain Resort</option>
+
+                        <option>Olumo Rock</option>
+
+                        <option>Zuma Rock</option>
+
+                        <option>Yankari National Park</option>
+
+                        <option>Lekki Conservation Centre</option>
+
+                        <option>Erin Ijesha Waterfalls</option>
+
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="message">
+
+                        Message
+
+                    </label>
+
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                </div>
+
+                <button type="submit" class="button">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+            <div id="formResponse"></div>
+
+        </section>
+
+    </main>
+<footer>
+    <p>&copy; 2026 Explore Nigeria | WDD 131 Final Project | I.J. Boniface</p>
+
+    <nav aria-label="Footer Navigation">
+        <a href="references.html">References</a>
+    </nav>
+</footer>
+
+</body>
+
+</html>

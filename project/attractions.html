@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore Nigeria | Attractions</title>
+
+    <meta name="description" content="Discover Nigeria's top tourist attractions.">
+    <meta name="author" content="I.J. Boniface">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/attractions.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            🌍 Explore Nigeria
+        </div>
+
+        <button id="menuButton" aria-label="Open Navigation">
+            ☰
+        </button>
+
+        <nav id="navigation">
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+
+                <li><a href="attractions.html" class="active">Attractions</a></li>
+
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+
+            <h1>Tourist Attractions</h1>
+
+            <p>
+
+                Explore some of Nigeria's most beautiful destinations,
+                from spectacular mountains to wildlife parks,
+                historic landmarks,
+                and tropical waterfalls.
+
+            </p>
+
+        </section>
+
+        <section class="filters">
+
+            <h2>Find Attractions</h2>
+
+            <div class="filter-controls">
+
+                <input type="search" id="searchBox" placeholder="Search attractions..." aria-label="Search attractions">
+
+                <select id="categoryFilter">
+
+                    <option value="All">All Categories</option>
+
+                    <option value="Nature">Nature</option>
+
+                    <option value="Wildlife">Wildlife</option>
+
+                    <option value="History">History</option>
+
+                    <option value="Adventure">Adventure</option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <div id="attractionsContainer" class="card-container">
+
+                <!-- JavaScript will create attraction cards here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+<footer>
+    <p>&copy; 2026 Explore Nigeria | WDD 131 Final Project | I.J. Boniface</p>
+
+    <nav aria-label="Footer Navigation">
+        <a href="references.html">References</a>
+    </nav>
+</footer>
+
+</body>
+
+</html>
